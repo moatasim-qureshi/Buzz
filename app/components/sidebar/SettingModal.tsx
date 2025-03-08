@@ -56,7 +56,7 @@ const SettingModal:React.FC<SettingModalProps> = ({
         .then(()=>{
             router.refresh();
             onClose();
-            toast.success('Setting Updated')
+            
         })
         .catch(()=>toast.error('Something went wrong'))
         .finally(()=> setIsLoading(false))
